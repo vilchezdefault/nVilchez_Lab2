@@ -5,8 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:nVilchez_Lab2.FORMS"
         mc:Ignorable="d"
-        Title="pnlUser" Height="450" Width="800">
-    <Grid>
-        
+        Title="pnlUser" Height="316" Width="455">
+    <Grid Margin="0,0,0,2">
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="White" Offset="0.769"/>
+                <GradientStop Color="#FF76BC21" Offset="0"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="lblTitle" Content="Users" HorizontalAlignment="Center" Margin="0,22,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" Height="30" Width="52" FontSize="16"/>
+        <TextBox x:Name="txtUsername" HorizontalAlignment="Center" Margin="0,95,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" SelectionOpacity="1.1" TextAlignment="Center"/>
+        <TextBox x:Name="txtPassword" HorizontalAlignment="Center" Margin="0,140,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" TextAlignment="Center"/>
+        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="66,202,0,0" VerticalAlignment="Top" Height="24" Width="68"/>
+        <Button x:Name="btnclear" Content="All clear" HorizontalAlignment="Left" Margin="191,202,0,0" VerticalAlignment="Top" Height="24" Width="68"/>
+        <Button x:Name="Done" Content="Done" HorizontalAlignment="Left" Margin="320,206,0,0" VerticalAlignment="Top" Width="68" Click="Done_Click"/>
+        <Label x:Name="lblusername" Content="Username" HorizontalAlignment="Center" Margin="0,68,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblPassword" Content="Password" HorizontalAlignment="Center" Margin="0,109,0,0" VerticalAlignment="Top"/>
+
     </Grid>
 </Window>

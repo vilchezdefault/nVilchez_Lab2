@@ -55,6 +55,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="FORMS\pnlAllergies.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FORMS\pnlDr.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FORMS\pnlUser.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -72,6 +84,15 @@
     <Compile Include="DATA\clsMed_report.cs" />
     <Compile Include="DATA\clsPrescription.cs" />
     <Compile Include="DATA\clsUser.cs" />
+    <Compile Include="FORMS\pnlAllergies.xaml.cs">
+      <DependentUpon>pnlAllergies.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\pnlDr.xaml.cs">
+      <DependentUpon>pnlDr.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FORMS\pnlUser.xaml.cs">
+      <DependentUpon>pnlUser.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
