@@ -36,7 +36,7 @@ namespace nVilchez_Lab2.DATA
             return data;
         }
         #endregion  Function or procedures
-        #region Gets N Set
+        #region Gets & Set
         public string UserName_prop
         {
             get { return UserName; }
