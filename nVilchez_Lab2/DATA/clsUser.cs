@@ -8,11 +8,11 @@ namespace nVilchez_Lab2.DATA
 {
     internal class clsUser
     {
-        #region Attributes
-        private String UserName;
-        private String password;
+        #region Attributtes
+        private string UserName;
+        private string password;
         #endregion Attibutes
-        #region Builders
+        #region constructors
 
         public clsUser()
         {
@@ -20,13 +20,14 @@ namespace nVilchez_Lab2.DATA
             this.password = "";
         } 
 
-        public clsUser(String UserName, String Password) 
+        public clsUser(string UserName, string Password) 
         {
-
+            this.UserName = UserName;
+            this.password= Password;
         }    
 
-        #endregion Builder
-        #region Functioons N procedures
+        #endregion constructors
+        #region Functioons or procedures
         public string printData()
         {
             string data = "";
@@ -34,15 +35,15 @@ namespace nVilchez_Lab2.DATA
                    "Password" + this.password + "\n";
             return data;
         }
-        #endregion  Function N procedures
+        #endregion  Function or procedures
         #region Gets N Set
-        public String UserName_prop
+        public string UserName_prop
         {
             get { return UserName; }
             set { UserName = value; }
         }
 
-        public String Password_prop
+        public string Password_prop
         {
             get { return password; }
             set { password = value; }

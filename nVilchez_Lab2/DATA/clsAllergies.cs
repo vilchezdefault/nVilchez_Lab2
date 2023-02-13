@@ -8,30 +8,30 @@ namespace nVilchez_Lab2.DATA
 {
     internal class clsAllergies
     {
-        #region Attributes
+        #region Attributtes
         private int IDAllergie;
-        private int numID;
-        private String kindOfAllergie;
+        private int num_idCustomer;
+        private string kindOfAllergie;
         #endregion Attributes
-        #region Builders
+        #region constructors
         public clsAllergies()
         {
             this.IDAllergie = 0;
-            this.numID = 0;
+            this.num_idCustomer = 0;
             this.kindOfAllergie = "";
         }
         public clsAllergies(int iDAllergie, int numID, string kindOfAllergie, int iDAllergie_prop, int numID_prop, string myProperty)
         {
             IDAllergie = iDAllergie;
-            this.numID = numID;
+            this.num_idCustomer = numID;
             this.kindOfAllergie = kindOfAllergie;
             IDAllergie_prop = iDAllergie_prop;
             this.numID_prop = numID_prop;
             MyProperty = myProperty;
         }
 
-        #endregion Builders
-        #region Functions N procedures
+        #endregion constructors
+        #region Functions or procedure
         public string printData()
         {
             string data = "";
@@ -40,7 +40,7 @@ namespace nVilchez_Lab2.DATA
             return data;
         }
         #endregion
-        #region Gets N Sets
+        #region Gets & Sets
         public int IDAllergie_prop
         {
             get { return IDAllergie; }
@@ -48,10 +48,10 @@ namespace nVilchez_Lab2.DATA
         }
         public int numID_prop
         {
-            get { return numID; }
-            set { numID = value; }
+            get { return num_idCustomer; }
+            set { num_idCustomer = value; }
         }
-        public String MyProperty
+        public string MyProperty
         {
             get { return kindOfAllergie; }
             set { kindOfAllergie = value; }
