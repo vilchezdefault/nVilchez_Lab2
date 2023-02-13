@@ -63,13 +63,14 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DATA\clDoctor.cs" />
-    <Compile Include="DATA\clDocu.cs" />
+    <Compile Include="DATA\clsCustomer.cs" />
+    <Compile Include="DATA\clsDr.cs" />
     <Compile Include="DATA\clsBranches.cs" />
+    <Compile Include="DATA\clsInvoce.cs" />
     <Compile Include="DATA\clsInvoicedetails.cs" />
-    <Compile Include="DATA\clPrescription.cs" />
     <Compile Include="DATA\clsAllergies.cs" />
-    <Compile Include="DATA\clsClient.cs" />
+    <Compile Include="DATA\clsMed_report.cs" />
+    <Compile Include="DATA\clsPrescription.cs" />
     <Compile Include="DATA\clsUser.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>

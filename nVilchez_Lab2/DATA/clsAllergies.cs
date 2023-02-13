@@ -30,7 +30,10 @@ namespace nVilchez_Lab2.DATA
             MyProperty = myProperty;
         }
 
+
+
         #endregion constructors
+
         #region Functions or procedure
         public string printData()
         {
@@ -40,6 +43,8 @@ namespace nVilchez_Lab2.DATA
             return data;
         }
         #endregion
+
+
         #region Gets & Sets
         public int IDAllergie_prop
         {
