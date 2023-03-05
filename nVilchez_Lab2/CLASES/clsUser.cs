@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace nVilchez_Lab2.DATA
 {
-    internal class clsUser
+    public class clsUser
     {
         #region Attributtes
         private string UserName;
@@ -50,4 +50,8 @@ namespace nVilchez_Lab2.DATA
         }
         #endregion
     }
+
+
+
+
 }

@@ -16,11 +16,8 @@
         <Label x:Name="lblTitle" Content="Doctors" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontFamily="Segoe UI Semibold" Height="30" Width="80" FontSize="16"/>
         <TextBox x:Name="txtid_dr" HorizontalAlignment="Left" Margin="98,41,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" SelectionOpacity="1.1" TextAlignment="Center"/>
         <TextBox x:Name="txtAllergies" HorizontalAlignment="Left" Margin="98,73,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" TextAlignment="Center"/>
-        <Button x:Name="btnSave" Content="Save" HorizontalAlignment="Left" Margin="70,249,0,0" VerticalAlignment="Top" Height="24" Width="68"/>
-        <Button x:Name="Done" Content="Done" HorizontalAlignment="Left" Margin="320,253,0,0" VerticalAlignment="Top" Width="68" Click="Done_Click"/>
-        <Button x:Name="btnclear" Content="All clear" HorizontalAlignment="Left" Margin="192,249,0,0" VerticalAlignment="Top" Height="24" Width="68"/>
         <Label x:Name="lblid_dr" Content="ID Doctor" HorizontalAlignment="Left" Margin="11,37,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="lblkindAllergie" Content="Kind of Allergie:" HorizontalAlignment="Left" Margin="7,65,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblmed_code" Content="Kind of Allergie:" HorizontalAlignment="Left" Margin="7,65,0,0" VerticalAlignment="Top"/>
         <TextBox x:Name="txtIDCustomer" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Width="322" TextAlignment="Center" Margin="98,104,0,0"/>
         <Label x:Name="lblidCustomer" Content="Kind of Allergie:" HorizontalAlignment="Left" Margin="7,96,0,0" VerticalAlignment="Top"/>
 

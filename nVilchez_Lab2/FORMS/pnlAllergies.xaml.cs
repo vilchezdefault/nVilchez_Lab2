@@ -23,5 +23,6 @@ namespace nVilchez_Lab2.FORMS
         {
             InitializeComponent();
         }
+
     }
 }

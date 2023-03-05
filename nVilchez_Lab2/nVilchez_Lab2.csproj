@@ -36,6 +36,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,6 +56,12 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="DATABASE\Conn.cs" />
+    <Compile Include="DATABASE\ConnSQL.cs" />
+    <Compile Include="DATA\dtoUser.cs" />
+    <Compile Include="TOOLS\clsChs.cs" />
+    <Compile Include="TOOLS\clsGlobalValue.cs" />
+    <Compile Include="TOOLS\writeLog.cs" />
     <Page Include="FORMS\pnlAllergies.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -63,7 +70,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="FORMS\pnlUser.xaml">
+    <Page Include="FORMS\pnlLogin.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -75,23 +82,23 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="DATA\clsCustomer.cs" />
-    <Compile Include="DATA\clsDr.cs" />
-    <Compile Include="DATA\clsBranches.cs" />
-    <Compile Include="DATA\clsInvoce.cs" />
-    <Compile Include="DATA\clsInvoicedetails.cs" />
-    <Compile Include="DATA\clsAllergies.cs" />
-    <Compile Include="DATA\clsMed_report.cs" />
-    <Compile Include="DATA\clsPrescription.cs" />
-    <Compile Include="DATA\clsUser.cs" />
+    <Compile Include="CLASES\clsCustomer.cs" />
+    <Compile Include="CLASES\clsDr.cs" />
+    <Compile Include="CLASES\clsBranches.cs" />
+    <Compile Include="CLASES\clsInvoce.cs" />
+    <Compile Include="CLASES\clsInvoicedetails.cs" />
+    <Compile Include="CLASES\clsAllergies.cs" />
+    <Compile Include="CLASES\clsMed_report.cs" />
+    <Compile Include="CLASES\clsPrescription.cs" />
+    <Compile Include="CLASES\clsUser.cs" />
     <Compile Include="FORMS\pnlAllergies.xaml.cs">
       <DependentUpon>pnlAllergies.xaml</DependentUpon>
     </Compile>
     <Compile Include="FORMS\pnlDr.xaml.cs">
       <DependentUpon>pnlDr.xaml</DependentUpon>
     </Compile>
-    <Compile Include="FORMS\pnlUser.xaml.cs">
-      <DependentUpon>pnlUser.xaml</DependentUpon>
+    <Compile Include="FORMS\pnlLogin.xaml.cs">
+      <DependentUpon>pnlLogin.xaml</DependentUpon>
     </Compile>
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
@@ -123,6 +130,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Resource Include="SOURCE\EVA.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
