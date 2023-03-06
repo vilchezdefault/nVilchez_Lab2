@@ -14,8 +14,8 @@ namespace nVilchez_Lab2.DATA
         {
             try
             {
-                string query = "SELECT USU_USUARIO FROM VETERINARIASOS.dbo.VT_USUARIOS WHERE USU_USUARIO ='"
-                    + data.UserName_prop + "' AND USU_CLAVE = '" + data.Password_prop + "'";
+                string query = "SELECT username FROM petSos.dbo.tb_users WHERE username ='"
+                    + data.UserName_prop + "' AND passwords = '" + data.Password_prop + "'";
 
                 var existe = conn.SQLCargaDataTable(_SQLConnection, query, null);
                 if (existe.Rows.Count > 0)

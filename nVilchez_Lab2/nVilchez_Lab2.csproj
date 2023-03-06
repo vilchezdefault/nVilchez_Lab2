@@ -59,10 +59,17 @@
     <Compile Include="DATABASE\Conn.cs" />
     <Compile Include="DATABASE\ConnSQL.cs" />
     <Compile Include="DATA\dtoUser.cs" />
+    <Compile Include="FORMS\pnlCustomer.xaml.cs">
+      <DependentUpon>pnlCustomer.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TOOLS\clsChs.cs" />
     <Compile Include="TOOLS\clsGlobalValue.cs" />
     <Compile Include="TOOLS\writeLog.cs" />
     <Page Include="FORMS\pnlAllergies.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FORMS\pnlCustomer.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -131,7 +138,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <Resource Include="SOURCE\EVA.jpg" />
   </ItemGroup>

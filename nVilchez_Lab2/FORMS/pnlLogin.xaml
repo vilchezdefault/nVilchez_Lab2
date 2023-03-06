@@ -22,8 +22,8 @@
         <Label x:Name="lblUser" Content="Username" HorizontalAlignment="Left" Height="25" Margin="348,114,0,0" VerticalAlignment="Top" Width="300" FontWeight="Bold"/>
         <Label x:Name="lblPass" Content="Password" HorizontalAlignment="Left" Height="25" Margin="348,207,0,0" VerticalAlignment="Top" Width="300" FontWeight="Bold"/>
         <Button x:Name="btnLogingTest" Content="Login" HorizontalAlignment="Left" Margin="370,329,0,0" VerticalAlignment="Top" Height="31" Width="256" Click="lblLogingTest_Click"/>
-        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="357,246,0,0" VerticalAlignment="Top" Width="311" Height="29"/>
-        <TextBox x:Name="txtUser" HorizontalAlignment="Left" Margin="357,144,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="311"/>
+        <PasswordBox x:Name="txtPassword" HorizontalAlignment="Left" Margin="348,232,0,0" VerticalAlignment="Top" Width="311" Height="24"/>
+        <TextBox x:Name="txtUser" HorizontalAlignment="Left" Margin="348,144,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="311" Height="26"/>
 
     </Grid>
 </Window>

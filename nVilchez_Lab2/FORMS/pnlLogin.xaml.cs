@@ -26,6 +26,7 @@ namespace nVilchez_Lab2.FORMS
             InitializeComponent();
         }
 
+
         private void lblLogingTest_Click(object sender, RoutedEventArgs e)
         {
             if (txtUser.Text.Length > 0 && txtPassword.Password.ToString().Length > 0)
@@ -37,7 +38,7 @@ namespace nVilchez_Lab2.FORMS
                 if (usu.RequestLogin(usuario) == true)
                 {
                     clsGlobalValue.userLogin = usuario.UserName_prop;
-                    pnlAllergies window = new pnlAllergies();
+                    pnlCustomer window = new pnlCustomer();
                     window.ShowDialog();
                 }
                 else
@@ -49,10 +50,7 @@ namespace nVilchez_Lab2.FORMS
             {
                 MessageBox.Show("Fill in the fields USERNAME and PASSWORD");
             }
-
         }
-
- 
     }
 }
 
