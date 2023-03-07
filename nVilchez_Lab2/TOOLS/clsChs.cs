@@ -17,8 +17,12 @@ namespace nVilchez_Lab2.TOOLS
             { 
                 e.Handled = false;
             }
-            MessageBox.Show("Just can write letters!", "Warning!", MessageBoxButton.OK);
-            e.Handled = true;
+            else
+            {
+                MessageBox.Show("Just can write letters!", "Warning!", MessageBoxButton.OK);
+                e.Handled = true;
+            }
+
                 
         }
 

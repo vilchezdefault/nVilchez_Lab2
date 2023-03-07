@@ -58,6 +58,7 @@
     </ApplicationDefinition>
     <Compile Include="DATABASE\Conn.cs" />
     <Compile Include="DATABASE\ConnSQL.cs" />
+    <Compile Include="DATA\dtoCustomer.cs" />
     <Compile Include="DATA\dtoUser.cs" />
     <Compile Include="FORMS\pnlCustomer.xaml.cs">
       <DependentUpon>pnlCustomer.xaml</DependentUpon>

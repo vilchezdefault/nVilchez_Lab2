@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using nVilchez_Lab2.TOOLS;
 
 namespace nVilchez_Lab2.FORMS
 {
@@ -24,6 +25,14 @@ namespace nVilchez_Lab2.FORMS
             InitializeComponent();
         }
 
+        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+        {
+            
+        }
 
+        //private void txtIdCustomer_Copy7_TextChanged(object sender, TextChangedEventArgs e)
+        //{
+        //    TOOLS.clsChs.onlyLetters(e);
+        //}
     }
 }

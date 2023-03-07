@@ -26,6 +26,7 @@ namespace nVilchez_Lab2.FORMS
             InitializeComponent();
         }
 
+        
 
         private void lblLogingTest_Click(object sender, RoutedEventArgs e)
         {
@@ -50,6 +51,11 @@ namespace nVilchez_Lab2.FORMS
             {
                 MessageBox.Show("Fill in the fields USERNAME and PASSWORD");
             }
+        }
+
+        private void txtUser_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            TOOLS.clsChs.onlyLetters(e);
         }
     }
 }
