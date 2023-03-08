@@ -7,7 +7,7 @@ using System.Windows.Markup;
 
 namespace nVilchez_Lab2.DATA
 {
-    internal class clsCustomer
+    public class clsCustomer
     {
         #region Attributes
         private int id_customer;
@@ -40,6 +40,20 @@ namespace nVilchez_Lab2.DATA
         public clsCustomer(int id_customer, string kind_id, string personal_id, string customer_name, string last_name, string second_lastname, DateTime date_birth, decimal weight, char gender, string phone_number, string email)
         {
             this.id_customer = id_customer;
+            this.kind_id = kind_id;
+            this.personal_id = personal_id;
+            this.customer_name = customer_name;
+            this.last_name = last_name;
+            this.second_lastname = second_lastname;
+            this.date_birth = date_birth;
+            this.weight = weight;
+            this.gender = gender;
+            this.phone_number = phone_number;
+            this.email = email;
+        }
+        public clsCustomer( string kind_id, string personal_id, string customer_name, string last_name, string second_lastname, DateTime date_birth, decimal weight, char gender, string phone_number, string email)
+        {
+            
             this.kind_id = kind_id;
             this.personal_id = personal_id;
             this.customer_name = customer_name;

@@ -30,6 +30,11 @@ namespace nVilchez_Lab2.FORMS
             
         }
 
+        private void txtName_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
         //private void txtIdCustomer_Copy7_TextChanged(object sender, TextChangedEventArgs e)
         //{
         //    TOOLS.clsChs.onlyLetters(e);
