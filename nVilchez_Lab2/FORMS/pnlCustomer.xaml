@@ -71,10 +71,12 @@
         <TextBox x:Name="txtKind_id" HorizontalAlignment="Left" Margin="5,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20"/>
         <TextBox x:Name="txtCustomer_name" HorizontalAlignment="Left" Margin="5,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="22"/>
         <TextBox x:Name="txtGender" HorizontalAlignment="Left" Margin="276,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="22"/>
-        <RadioButton x:Name="rdtSaveCustomer" Content="Save Customer" HorizontalAlignment="Left" Margin="276,62,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdtSaveCustomer" Content="Save Customer" HorizontalAlignment="Left" Margin="276,62,0,0" VerticalAlignment="Top" Checked="rdtSaveCustomer_Checked"/>
         <RadioButton x:Name="rdtSeeInfo" Content="See info Customer" HorizontalAlignment="Left" Margin="276,91,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="rtdUpdateCustomer" Content="Update Customer" HorizontalAlignment="Left" Margin="408,59,0,0" VerticalAlignment="Top"/>
         <RadioButton x:Name="rtdDeleteCustomer" Content="Delete Customer" HorizontalAlignment="Left" Margin="408,91,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblMode_" Content="Mode" HorizontalAlignment="Left" Margin="276,10,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtMode" HorizontalAlignment="Left" Margin="276,36,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" IsEnabled="False"/>
 
 
     </Grid>

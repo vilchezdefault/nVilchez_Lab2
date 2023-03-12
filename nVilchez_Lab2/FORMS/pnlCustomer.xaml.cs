@@ -72,5 +72,13 @@ namespace nVilchez_Lab2.FORMS
             }
         }
 
+        private void rdtSaveCustomer_Checked(object sender, RoutedEventArgs e)
+        {
+            if(rdtSaveCustomer.IsPressed)
+            {
+                txtMode.Text = "Insertar";
+            }
+        }
+
     }
 }
