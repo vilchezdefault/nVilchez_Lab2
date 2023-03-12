@@ -19,7 +19,8 @@ namespace nVilchez_Lab2.DATA
             try
             {
                 string SAVE = "INSERT INTO petSos.dbo.LAB_CUSTOMER VALUES ('" + DATA.Kind_id + "', '" + DATA.Personal_id + "', '" + DATA.Customer_name + "', '" + DATA.Last_name + "', '" +
-                                DATA.Second_lastname + "', '" + DATA.Date_birth + "', '" + DATA.Weight + "', '" + DATA.Gender + "', '" + DATA.Phone_number + "', '";
+                                DATA.Second_lastname + "', '" + DATA.Date_birth + "', '" + DATA.Weight + "', '" + DATA.Gender + "', '" + DATA.Phone_number + "', '" + DATA.Email +
+                                "', '" + DATA.Status + "', '" + DATA.AddBy+ "', '" + DATA.DateAdd + "',null,null);" ;
 
                 conn.SQLExecuteCmm(_SQLConnection, SAVE);
                 return true;

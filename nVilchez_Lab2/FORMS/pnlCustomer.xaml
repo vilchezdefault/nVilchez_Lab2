@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:nVilchez_Lab2.FORMS"
         mc:Ignorable="d"
-        Title="pnlCustomer" Height="450" Width="579">
-    <Grid>
+        Title="pnlCustomer" Height="483" Width="556">
+    <Grid x:Name="btnSave" Margin="0,0,-9,-16">
         <Grid.RowDefinitions>
             <RowDefinition/>
         </Grid.RowDefinitions>
@@ -20,29 +20,24 @@
                 <GradientStop Color="#FF004F59" Offset="1"/>
             </LinearGradientBrush>
         </Grid.Background>
-        <Label x:Name="lblTitle" Content="Customer Service" HorizontalAlignment="Left" Margin="281,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Arial Black" Height="44" Width="250" FontSize="24"/>
-        <Label x:Name="lblIdCustomer" Content="ID Customer" HorizontalAlignment="Left" Margin="10,76,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="30"/>
-        <TextBox x:Name="txtIdCustomer" HorizontalAlignment="Left" Margin="10,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20"/>
-        <Label x:Name="lblKindId" Content="Kind of Identity" HorizontalAlignment="Left" Margin="10,12,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="125" FontSize="16" Height="30"/>
-        <Label x:Name="lblLastName" Content="Last name" HorizontalAlignment="Left" Margin="10,190,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
-        <TextBox x:Name="txtLastname" HorizontalAlignment="Left" Margin="10,219,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
-        <Label x:Name="lblSecond_lastname" Content="Second last name" HorizontalAlignment="Left" Margin="10,245,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="145" FontSize="16" Height="29"/>
-        <TextBox x:Name="txtIdCustomer_Copy3" HorizontalAlignment="Left" Margin="10,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
-        <Label x:Name="lblGender" Content="Gender" HorizontalAlignment="Left" Margin="281,117,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
-        <Label x:Name="lblPhone" Content="Phone" HorizontalAlignment="Left" Margin="281,190,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
-        <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Margin="281,218,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="22"/>
-        <Label x:Name="lblEmail" Content="Email" HorizontalAlignment="Left" Margin="281,245,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="281,274,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
+        <Label x:Name="lblTitle" Content="Customer Service" HorizontalAlignment="Left" Margin="5,7,0,0" VerticalAlignment="Top" FontWeight="Bold" FontFamily="Arial Black" Height="44" Width="250" FontSize="24"/>
+        <Label x:Name="lblIdCustomer" Content="ID Customer" HorizontalAlignment="Left" Margin="5,120,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="30"/>
+        <TextBox x:Name="txtPersonal_id" HorizontalAlignment="Left" Margin="5,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20"/>
+        <Label x:Name="lblKindId" Content="Kind of Identity" HorizontalAlignment="Left" Margin="5,56,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="125" FontSize="16" Height="30"/>
+        <Label x:Name="lblLastName" Content="Last name" HorizontalAlignment="Left" Margin="5,234,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
+        <TextBox x:Name="txtLastname" HorizontalAlignment="Left" Margin="5,263,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
+        <Label x:Name="lblSecond_lastname" Content="Second last name" HorizontalAlignment="Left" Margin="5,289,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="145" FontSize="16" Height="29"/>
+        <TextBox x:Name="txtSecondLastName" HorizontalAlignment="Left" Margin="5,321,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
+        <Label x:Name="lblGender" Content="Gender" HorizontalAlignment="Left" Margin="276,182,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
+        <Label x:Name="lblPhone" Content="Phone" HorizontalAlignment="Left" Margin="276,236,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
+        <TextBox x:Name="txtPhone" HorizontalAlignment="Left" Margin="276,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="22"/>
+        <Label x:Name="lblEmail" Content="Email" HorizontalAlignment="Left" Margin="276,289,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Margin="276,318,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
 
-        <Label x:Name="lblBorn" Content="Born" HorizontalAlignment="Left" Margin="10,309,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
-        <Label x:Name="lblWeight" Content="Weight" HorizontalAlignment="Left" Margin="281,54,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
-        <TextBox x:Name="txtWeight" HorizontalAlignment="Left" Margin="281,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
-
-        <ComboBox x:Name="cmbKindId" HorizontalAlignment="Left" Margin="10,42,0,0" VerticalAlignment="Top" Width="250" Height="26">
-            <ComboBoxItem Content="Personal ID" ContentStringFormat=""/>
-            <ComboBoxItem Content="Legal ID"/>
-        </ComboBox>
-        <DatePicker x:Name="dtpBorn" HorizontalAlignment="Left" Margin="14,337,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="278" Height="24">
+        <Label x:Name="lblBorn" Content="Born" HorizontalAlignment="Left" Margin="5,353,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
+        <Label x:Name="lblWeight" Content="Weight" HorizontalAlignment="Left" Margin="276,121,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
+        <TextBox x:Name="txtWeight" HorizontalAlignment="Left" Margin="276,150,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="21"/>
+        <DatePicker x:Name="dtpDateBirth" HorizontalAlignment="Left" Margin="9,381,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.5,0.5" Width="278" Height="24">
             <DatePicker.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -52,10 +47,9 @@
                 </TransformGroup>
             </DatePicker.RenderTransform>
         </DatePicker>
-        <RadioButton x:Name="rtbF" Content="Female" HorizontalAlignment="Left" Margin="292,151,0,0" VerticalAlignment="Top" Height="15" Width="57"/>
-        <Label x:Name="lblFechaAdicion" Content="Fecha de adición:" HorizontalAlignment="Left" Height="20" Margin="418,309,0,0" VerticalAlignment="Top" Width="98" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold"/>
-        <Label x:Name="lblFechaModificacion" Content="Fecha de modificación:" HorizontalAlignment="Left" Height="20" Margin="413,351,0,0" VerticalAlignment="Top" Width="100" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold"/>
-        <TextBox x:Name="txtFechaAdicion" HorizontalAlignment="Left" Height="25" Margin="418,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.48,2.402" FontFamily="Arial" FontSize="9" IsEnabled="False">
+        <Label x:Name="lblAddDate" Content="Fecha de adición:" HorizontalAlignment="Left" Height="20" Margin="413,353,0,0" VerticalAlignment="Top" Width="98" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold"/>
+        <Label x:Name="lblUpdateDate" Content="Fecha de modificación:" HorizontalAlignment="Left" Height="20" Margin="408,395,0,0" VerticalAlignment="Top" Width="100" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBox x:Name="txtAddDate" HorizontalAlignment="Left" Height="25" Margin="413,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.48,2.402" FontFamily="Arial" FontSize="9" IsEnabled="False">
             <TextBox.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -65,14 +59,24 @@
                 </TransformGroup>
             </TextBox.RenderTransform>
         </TextBox>
-        <TextBox x:Name="txtFechaModificacion" HorizontalAlignment="Left" Height="25" Margin="418,371,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.48,2.402" FontFamily="Arial" FontSize="9" IsEnabled="False"/>
-        <Label x:Name="lblAdicionadoPor" Content="Adicionado por:" HorizontalAlignment="Left" Height="20" Margin="308,309,0,0" VerticalAlignment="Top" Width="115" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold"/>
-        <Label x:Name="lblModificadoPor" Content="Modificado por:" HorizontalAlignment="Left" Height="20" Margin="305,351,0,0" VerticalAlignment="Top" Width="115" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold"/>
-        <TextBox x:Name="txtAdicionadoPor" HorizontalAlignment="Left" Height="25" Margin="306,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.48,2.402" FontFamily="Arial" FontSize="9" IsEnabled="False"/>
-        <TextBox x:Name="txtModificadoPor" HorizontalAlignment="Left" Height="25" Margin="306,371,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.48,2.402" FontFamily="Arial" FontSize="9" IsEnabled="False"/>
-        <Button x:Name="btnSubmit" Content="Submit" HorizontalAlignment="Left" Margin="23,384,0,0" VerticalAlignment="Top" Width="237" Height="20" Click="btnSubmit_Click"/>
-        <RadioButton x:Name="rtbM" Content="Female" HorizontalAlignment="Left" Margin="363,151,0,0" VerticalAlignment="Top" Height="15" Width="57"/>
-        <Label x:Name="lblName" Content="Name" HorizontalAlignment="Left" Margin="10,139,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
-        <TextBox x:Name="txtName" HorizontalAlignment="Left" Margin="10,165,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20"/>
+        <TextBox x:Name="txtUpdateDate" HorizontalAlignment="Left" Height="25" Margin="413,415,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.48,2.402" FontFamily="Arial" FontSize="9" IsEnabled="False"/>
+        <Label x:Name="lblAddBy" Content="Adicionado por:" HorizontalAlignment="Left" Height="20" Margin="303,353,0,0" VerticalAlignment="Top" Width="115" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold"/>
+        <Label x:Name="lblUpdateBy" Content="Modificado por:" HorizontalAlignment="Left" Height="20" Margin="300,395,0,0" VerticalAlignment="Top" Width="115" FontFamily="Arial" FontSize="9" FontStyle="Italic" FontWeight="Bold"/>
+        <TextBox x:Name="txtAddBy" HorizontalAlignment="Left" Height="25" Margin="301,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.48,2.402" FontFamily="Arial" FontSize="9" IsEnabled="False"/>
+        <TextBox x:Name="txtUpdateBy" HorizontalAlignment="Left" Height="25" Margin="301,415,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102" RenderTransformOrigin="0.48,2.402" FontFamily="Arial" FontSize="9" IsEnabled="False"/>
+        <Label x:Name="lblName" Content="Name" HorizontalAlignment="Left" Margin="5,183,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
+        <Button x:Name="btnSaveC" Content="Save" HorizontalAlignment="Left" Margin="5,428,0,0" VerticalAlignment="Top" Click="btnSave1_Click" Width="266"/>
+        <Label x:Name="lblStatus" Content="Status" HorizontalAlignment="Left" Margin="429,182,0,0" VerticalAlignment="Top" FontFamily="Bahnschrift SemiBold" Width="106" FontSize="16" Height="29"/>
+        <CheckBox x:Name="ckStatus" Content="A/I" HorizontalAlignment="Left" Margin="482,221,0,0" VerticalAlignment="Top" Height="34" Width="46"/>
+        <TextBox x:Name="txtKind_id" HorizontalAlignment="Left" Margin="5,91,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="20"/>
+        <TextBox x:Name="txtCustomer_name" HorizontalAlignment="Left" Margin="5,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="250" Height="22"/>
+        <TextBox x:Name="txtGender" HorizontalAlignment="Left" Margin="276,208,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="144" Height="22"/>
+        <RadioButton x:Name="rdtSaveCustomer" Content="Save Customer" HorizontalAlignment="Left" Margin="276,62,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rdtSeeInfo" Content="See info Customer" HorizontalAlignment="Left" Margin="276,91,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rtdUpdateCustomer" Content="Update Customer" HorizontalAlignment="Left" Margin="408,59,0,0" VerticalAlignment="Top"/>
+        <RadioButton x:Name="rtdDeleteCustomer" Content="Delete Customer" HorizontalAlignment="Left" Margin="408,91,0,0" VerticalAlignment="Top"/>
+
+
     </Grid>
 </Window>
+

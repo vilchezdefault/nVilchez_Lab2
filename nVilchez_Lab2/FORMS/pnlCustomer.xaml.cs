@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using nVilchez_Lab2.DATA;
 using nVilchez_Lab2.TOOLS;
 
 namespace nVilchez_Lab2.FORMS
@@ -25,14 +26,50 @@ namespace nVilchez_Lab2.FORMS
             InitializeComponent();
         }
 
-        private void btnSubmit_Click(object sender, RoutedEventArgs e)
+
+
+        private void txtName_PreviewTextInput(object sender, TextCompositionEventArgs e)
         {
-            
+            TOOLS.clsChs.onlyLetters(e);
         }
 
-        private void txtName_TextChanged(object sender, TextChangedEventArgs e)
+        private void btnSave1_Click(object sender, RoutedEventArgs e)
         {
+            string status;
+            if (txtKind_id.Text.Length > 0 && txtPersonal_id.Text.Length > 0 && txtCustomer_name.Text.Length > 0 && txtLastname.Text.Length > 0 &&
+                txtSecondLastName.Text.Length >0 && dtpDateBirth.SelectedDate !=null)
+            {
+                if (ckStatus.IsChecked == true)
+                {
+                    status = "A";
+                }
+                else
+                {
+                    status = "I";
+                }
 
+
+
+                clsCustomer customer = new clsCustomer(txtKind_id.Text, txtPersonal_id.Text, txtCustomer_name.Text, txtLastname.Text, txtSecondLastName.Text,
+                                                          dtpDateBirth.SelectedDate.Value.Date,Convert.ToDecimal(txtWeight.Text),Char.Parse(txtGender.Text),
+                                                          txtPhone.Text,txtEmail.Text,status,TOOLS.clsGlobalValue.userLogin,DateTime.Now);
+
+
+                dtoCustomer cust = new dtoCustomer();
+                if (cust.saveCustomer(customer) == true)
+                {
+                    MessageBox.Show("Save complete!");
+                }
+                else
+                {
+                    MessageBox.Show("Wrong Data!");
+
+                }
+            }
+            else
+            {
+                MessageBox.Show("You need fo fill all");
+            }
         }
 
     }
