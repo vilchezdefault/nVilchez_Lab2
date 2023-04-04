@@ -14,8 +14,8 @@ namespace nVilchez_Lab2.DATA
         {
             try
             {
-                string query = "SELECT username FROM petSos.dbo.tb_users WHERE username ='"
-                    + data.UserName_prop + "' AND passwords = '" + data.Password_prop + "'";
+                string query = "SELECT USR_USERNAME FROM LAB.dbo.LAB_USERS WHERE USR_USERNAME ='"
+                    + data.UserName_prop + "' AND USR_PASSWORD = '" + data.Password_prop + "'";
 
                 var exist = conn.SQLCargaDataTable(_SQLConnection, query, null);
                 if (exist.Rows.Count > 0)
